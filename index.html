@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ja" data-style="B">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextDrive Holdings</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;800&family=Noto+Sans+TC:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles_tokyo.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="mainNav">
+  <div class="wrap nav-inner">
+    <a class="logo-link" href="#top" aria-label="NextDrive Holdings">
+      <img class="logo-img logo-white" src="assets/logo_white.png" alt="nextDrive">
+      <img class="logo-img logo-black" src="assets/logo_black.png" alt="nextDrive">
+    </a>
+    <div class="nav-mid">
+      <a class="nav-link" href="#news" data-i18n="nav.news">ニュース</a>
+      <a class="nav-link" href="#mission" data-i18n="nav.mission">Mission</a>
+      <a class="nav-link" href="#technology" data-i18n="nav.technology">テクノロジー</a>
+      <a class="nav-link" href="#solutions" data-i18n="nav.solutions">ソリューション</a>
+      <a class="nav-link" href="#group" data-i18n="nav.group">グループ</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="zh">中</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="ja" class="active">日</button>
+      </div>
+      <a class="nav-cta" href="#group" data-i18n="nav.contact">お問い合わせ</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO — 全螢幕固定背景首屏 -->
+<header class="hero" id="hero">
+  <div class="hero-bg-fixed"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-h1">
+      <span class="hero-h1-main" data-i18n="hero.title.main">新たなエネルギー経済を動かす</span>
+      <span class="hero-h1-sub" data-i18n="hero.title.sub">分散型エネルギーをつなぎ、よりスマートな未来へ</span>
+    </h1>
+    <p class="hero-sub" data-i18n="hero.sub"></p>
+    <div class="hero-milestones">
+      <div class="hm-item">
+        <div class="hm-num">37,000<span class="hm-suffix">+</span></div>
+        <div class="hm-label" data-i18n="milestone.label1">能源案場據點</div>
+      </div>
+      <div class="hm-divider"></div>
+      <div class="hm-item">
+        <div class="hm-num">80<span class="hm-suffix">+</span><span class="hm-unit">MW</span></div>
+        <div class="hm-label" data-i18n="milestone.label2">可調度分散式能源</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll-hint">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+
+
+<!-- NEWS -->
+<section class="news" id="news">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="news.eyebrow">News</div>
+      <h2 class="h2" data-i18n="news.title">ニュースセンター</h2>
+      <p class="lead" data-i18n="news.lead">業界インサイトと企業ニュースの最新情報</p>
+    </div>
+    <div class="news-list" id="newsList">
+      <div class="news-item-wrapper" data-news-id="1">
+        <button class="news-item" type="button">
+          <div class="news-date-location">
+            <div class="news-date">2026.07</div>
+            <div class="news-location" data-i18n="news.item1.location">東京、日本</div>
+          </div>
+          <div class="news-body">
+            <div class="news-tag" data-i18n="news.item1.tag">プレスリリース</div>
+            <h3 data-i18n="news.item1.title">NextDrive、日本初表前蓄電所が稼働開始</h3>
+            <p data-i18n="news.item1.desc">NextDriveの日本初表前蓄電所（熊本県）が系統連系を完了し、電力取引を開始した。</p>
+          </div>
+          <div class="news-arrow">→</div>
+        </button>
+        <div class="news-detail" data-news-id="1">
+          <div class="news-detail-inner">
+            <button class="news-detail-close" type="button" aria-label="Close">×</button>
+            <div class="news-detail-image">
+              <img src="assets/news_item1_hero.jpg" alt="News image" class="news-detail-img" onerror="this.style.display='none';this.parentElement.classList.add('is-missing')">
+            </div>
+            <div class="news-detail-header">
+              <div class="news-detail-date" data-i18n="news.item1.date">東京、日本－2026年7月（日付は確認中）</div>
+            </div>
+            <div class="news-detail-content">
+              <div data-i18n="news.item1.content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news-item-wrapper" data-news-id="2">
+        <button class="news-item" type="button">
+          <div class="news-date-location">
+            <div class="news-date">2025.10.29</div>
+            <div class="news-location" data-i18n="news.item2.location">台北、台湾</div>
+          </div>
+          <div class="news-body">
+            <div class="news-tag" data-i18n="news.item2.tag">プレスリリース</div>
+            <h3 data-i18n="news.item2.title">AI制御が節費2.7倍を実現、光蓄電投資新時代へ</h3>
+            <p data-i18n="news.item2.desc">NextDriveが台湾エネルギー展でAI調整の成果を発表、節費2.7倍で光蓄電投資新時代を開く。</p>
+          </div>
+          <div class="news-arrow">→</div>
+        </button>
+        <div class="news-detail" data-news-id="2">
+          <div class="news-detail-inner">
+            <div class="news-detail-header">
+              <div class="news-detail-date" data-i18n="news.item2.date">台北、台湾－2025年10月29日</div>
+            </div>
+            <div class="news-detail-content">
+              <div data-i18n="news.item2.content"></div>
+            </div>
+            <button class="news-detail-close" type="button" aria-label="Close">×</button>
+          </div>
+        </div>
+      </div>
+      <div class="news-item-wrapper" data-news-id="3">
+        <button class="news-item" type="button">
+          <div class="news-date-location">
+            <div class="news-date">2025.09.25</div>
+            <div class="news-location" data-i18n="news.item3.location">東京、日本</div>
+          </div>
+          <div class="news-body">
+            <div class="news-tag" data-i18n="news.item3.tag">プレスリリース</div>
+            <h3 data-i18n="news.item3.title">NextDrive東証アジア新興企業2年連続選出</h3>
+            <p data-i18n="news.item3.desc">東證が2025年アジア新興企業を発表、NextDriveは2年連続選出、台湾で選ばれた4社の一社に。</p>
+          </div>
+          <div class="news-arrow">→</div>
+        </button>
+        <div class="news-detail" data-news-id="3">
+          <div class="news-detail-inner">
+            <div class="news-detail-header">
+              <div class="news-detail-date" data-i18n="news.item3.date">東京、日本－2025年9月25日</div>
+            </div>
+            <div class="news-detail-content">
+              <div data-i18n="news.item3.content"></div>
+            </div>
+            <button class="news-detail-close" type="button" aria-label="Close">×</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 子公司最新消息入口 -->
+    <div class="news-subsidiaries">
+      <p class="news-sub-label" data-i18n="news.sub.label">查看各集團公司的最新消息：</p>
+      <div class="news-sub-grid">
+        <a class="news-sub-card" href="https://www.nextdrive.io/category/news_tw/" target="_blank" rel="noopener noreferrer">
+          <span class="news-sub-name" data-i18n="news.sub.tw">NextDrive 台灣</span>
+          <span class="news-sub-link" data-i18n="news.sub.link">查看最新消息 →</span>
+        </a>
+        <a class="news-sub-card" href="https://www.nextdrive.io/ja/category/press-release/" target="_blank" rel="noopener noreferrer">
+          <span class="news-sub-name" data-i18n="news.sub.jp">NextDrive 日本</span>
+          <span class="news-sub-link" data-i18n="news.sub.link">查看最新消息 →</span>
+        </a>
+        <a class="news-sub-card" href="https://grex-energy.co.jp/#news" target="_blank" rel="noopener noreferrer">
+          <span class="news-sub-name" data-i18n="news.sub.grex">GREX ENERGY</span>
+          <span class="news-sub-link" data-i18n="news.sub.link">查看最新消息 →</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- EMOTIONAL SCENE — VPP 感性訴求 -->
+<section class="scene-band" id="our-mission">
+  <div class="scene-img" style="background-image:url('assets/scene_vpp.jpg')"></div>
+  <div class="scene-overlay"></div>
+  <div class="wrap scene-text">
+    <div class="scene-eyebrow" data-i18n="mission.eyebrow">ミッション</div>
+    <h2 class="scene-h2" data-i18n="mission.title">エネルギーコミュニティをつなぎ、よりクリーンな未来へ</h2>
+    <p class="scene-body" data-i18n="mission.body">NextDrive Holdingsは、Internet of Energy Platformを基盤として、次世代のデジタルエネルギーインフラを構築しています。分散型エネルギーリソースを統合・最適化し、個人、企業、都市、さらには国家規模に至るまでのエネルギーネットワークを結びつけ、大規模な仮想発電所（VPP）として機能させます。</p>
+  </div>
+</section>
+
+
+
+<!-- CORE TECHNOLOGY -->
+<section class="tech" id="technology">
+
+  <div class="wrap">
+
+    <!-- SECTION HEAD -->
+    <div class="tech-section-head">
+      <div class="eyebrow" data-i18n="tech.eyebrow">Core Technology</div>
+    </div>
+
+  </div>
+
+  <div class="tech-main-intro">
+    <div class="wrap">
+      <div class="tech-intro-center">
+        <h2 class="tech-main-h2" data-i18n="tech.main.title" style="text-align: center; line-height: 1.3;">Powering the Energy Value Chain<br>Four Core Technologies</h2>
+        <p class="tech-main-p" data-i18n="tech.main.overview">Distributed energy resources that connect, optimize, predict, and monetize. NextDrive realizes next-generation energy services through four core technology pillars.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-value-flow">
+    <div class="wrap">
+      <div class="tech-flow-flex">
+        
+        <div class="tech-flow-item">
+          <div class="tech-flow-hdr">
+            <h3 data-i18n="tech.flow.p1">Connectivity</h3>
+          </div>
+          <div class="tech-flow-line-dec"></div>
+          <p class="tech-flow-desc" data-i18n="tech.flow.p1.desc">Connecting every device across every site</p>
+        </div>
+
+        <div class="tech-flow-arrow-svg">
+          <svg width="24" height="1" viewBox="0 0 24 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0.5" x2="20" y2="0.5" stroke="#3B9EFF" stroke-width="1"/>
+            <polygon points="24,0.5 20,0 20,1" fill="#3B9EFF"/>
+          </svg>
+        </div>
+
+        <div class="tech-flow-item">
+          <div class="tech-flow-hdr">
+            <h3 data-i18n="tech.flow.p2">Optimization</h3>
+          </div>
+          <div class="tech-flow-line-dec"></div>
+          <p class="tech-flow-desc" data-i18n="tech.flow.p2.desc">AI-powered prediction and optimization</p>
+        </div>
+
+        <div class="tech-flow-arrow-svg">
+          <svg width="24" height="1" viewBox="0 0 24 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0.5" x2="20" y2="0.5" stroke="#3B9EFF" stroke-width="1"/>
+            <polygon points="24,0.5 20,0 20,1" fill="#3B9EFF"/>
+          </svg>
+        </div>
+
+        <div class="tech-flow-item">
+          <div class="tech-flow-hdr">
+            <h3 data-i18n="tech.flow.p3">Intelligence</h3>
+          </div>
+          <div class="tech-flow-line-dec"></div>
+          <p class="tech-flow-desc" data-i18n="tech.flow.p3.desc">AI-powered prediction and market analysis</p>
+        </div>
+
+        <div class="tech-flow-arrow-svg">
+          <svg width="24" height="1" viewBox="0 0 24 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="0.5" x2="20" y2="0.5" stroke="#3B9EFF" stroke-width="1"/>
+            <polygon points="24,0.5 20,0 20,1" fill="#3B9EFF"/>
+          </svg>
+        </div>
+
+        <div class="tech-flow-item">
+          <div class="tech-flow-hdr">
+            <h3 data-i18n="tech.flow.p4">Monetization</h3>
+          </div>
+          <div class="tech-flow-line-dec"></div>
+          <p class="tech-flow-desc" data-i18n="tech.flow.p4.desc">Converting resources into revenue streams</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="tech-pillars-detail-zone">
+    <div class="wrap">
+
+      <div class="prod-section-clean">
+        <div class="prod-grid prod-grid--4col">
+          
+          <div class="prod-card">
+            <h3 class="prod-title" data-i18n="tech.p1.title">Decentralized Edge Architecture</h3>
+            <div class="prod-subtitle" data-i18n="tech.p1.subheading">Hardware-Agnostic Edge &amp; Grid Interoperability</div>
+            <div class="prod-divider"></div>
+            <p class="prod-body" data-i18n="tech.p1.desc">Cloud-independent on-site edge infrastructure securing continuous asset availability. Multi-protocol (14+) and certified (ISO/JC-STAR) to eliminate portfolio integration friction.</p>
+            <ul class="prod-list">
+              <li data-i18n="tech.p1.bullet1"><b>Hybrid Cloud/Edge:</b> Optimizes local processing with cloud-scale fleet coordination.</li>
+              <li data-i18n="tech.p1.bullet2"><b>Autonomous Failover:</b> Mitigates downtime risks via automated local grid-edge control.</li>
+              <li data-i18n="tech.p1.bullet3"><b>Compliance Moats:</b> Institutional security backed by ISO27001, ISO27017, and JC-STAR.</li>
+            </ul>
+          </div>
+
+          <div class="prod-card">
+            <h3 class="prod-title" data-i18n="tech.p2.title">Internet of Energy (IoE) Platform</h3>
+            <div class="prod-subtitle" data-i18n="tech.p2.subheading">Cloud-Native Aggregation &amp; Asset Orchestration</div>
+            <div class="prod-divider"></div>
+            <p class="prod-body" data-i18n="tech.p2.desc">Scalable energy OS aggregating heterogeneous DERs into a unified network. Delivers real-time telemetry and automated dispatch for complex asset management.</p>
+            <ul class="prod-list">
+              <li data-i18n="tech.p2.bullet1"><b>Real-Time Telemetry:</b> Provides instant visibility and predictive fleet dispatch.</li>
+              <li data-i18n="tech.p2.bullet2"><b>Unified Management:</b> Consolidates fragmented assets into a single-pane framework.</li>
+              <li data-i18n="tech.p2.bullet3"><b>OEM Compatibility:</b> Ensures high-fidelity software integration across diverse asset types.</li>
+            </ul>
+          </div>
+
+          <div class="prod-card">
+            <h3 class="prod-title" data-i18n="tech.p3.title">AI Analytics &amp; DaaS</h3>
+            <div class="prod-subtitle" data-i18n="tech.p3.subheading">AI-Driven Yield Optimization &amp; Risk Management</div>
+            <div class="prod-divider"></div>
+            <p class="prod-body" data-i18n="tech.p3.desc">Proprietary machine learning forecasting load and renewable volatility. Maximizes portfolio IRR through automated battery arbitrage while neutralizing grid penalty exposure.</p>
+            <ul class="prod-list">
+              <li data-i18n="tech.p3.bullet1"><b>High-Accuracy Forecasting:</b> Achieves 93% load and 85% solar accuracy profiles.</li>
+              <li data-i18n="tech.p3.bullet2"><b>Multi-Objective Optimization:</b> Balances cost, carbon intensity, and VPP goals in real time.</li>
+              <li data-i18n="tech.p3.bullet3"><b>SoC Arbitrage:</b> Capitalizes on precision forecasting to unlock asset owner alpha.</li>
+            </ul>
+          </div>
+
+          <div class="prod-card">
+            <h3 class="prod-title" data-i18n="tech.p4.title">Aggregation &amp; Market Bidding Engine</h3>
+            <div class="prod-subtitle" data-i18n="tech.p4.subheading">Fleet-Scale Resource Management &amp; Capacity Monetization</div>
+            <div class="prod-divider"></div>
+            <p class="prod-body" data-i18n="tech.p4.desc">Integrates Resource Aggregation (RA) and Aggregation Coordinator (AC) trading. Transforms physical assets into liquid income through automated self-consumption and power resale.</p>
+            <ul class="prod-list">
+              <li data-i18n="tech.p4.bullet1"><b>Ancillary Integration:</b> Synchronizes fleet capacity with wholesale power markets.</li>
+              <li data-i18n="tech.p4.bullet2"><b>Yield Maximization:</b> Drives revenue optimization via dynamic bid forecasting.</li>
+              <li data-i18n="tech.p4.bullet3"><b>Asset Monetization:</b> Unlocks recurring yield through commercial green energy resale.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="wrap">
+
+    <!-- IoE ECOSYSTEM 生態系圖 -->
+    <div class="eco-section">
+      <div class="eco-head">
+        <div class="eco-eyebrow">NextDrive IoE Ecosystem</div>
+        <h3 class="eco-bridge-title" data-i18n="tech.ecosystem.subtitle">推動 DX 與 GX 的次世代能源服務平台</h3>
+      </div>
+
+      <!-- 重構後的 SVG/CSS 互動式架構圖 -->
+      <div class="eco-diagram-wrapper">
+
+        <!-- 縱軸標籤 -->
+        <div class="eco-y-axis">
+          <div class="eco-y-axis-arrow eco-y-axis-arrow--top"></div>
+          <span class="eco-y-axis-label" data-i18n="eco.y.axis">サービスレイヤー</span>
+          <div class="eco-y-axis-arrow eco-y-axis-arrow--bottom"></div>
+        </div>
+
+      <div class="eco-diagram-v2">
+
+        <!-- 右上角服務範疇標籤 -->
+        <div class="eco-legend eco-legend--badge">
+          <span class="eco-legend-dot"></span>
+          <span data-i18n="eco.legend">NextDrive サービス領域</span>
+        </div>
+
+        <!-- ROW 1: 電力取引 -->
+        <div class="eco2-row">
+          <div class="eco2-node eco2-node--market" data-i18n="eco.row1">電力取引（特定卸、小売）</div>
+        </div>
+
+        <div class="eco2-connector"><div class="eco2-dot"></div></div>
+
+        <!-- ROW 2: AC システム -->
+        <div class="eco2-row">
+          <div class="eco2-node eco2-node--ac" data-i18n="eco.row2">ACシステム（需給管理システム）</div>
+        </div>
+
+        <div class="eco2-connector"><div class="eco2-dot"></div></div>
+
+        <!-- ROW 3: RA システム (服務範疇內) -->
+        <div class="eco2-row">
+          <div class="eco2-node eco2-node--ra eco2-node--nd" data-i18n="eco.row3">RAシステム（群制御・管理システム）</div>
+        </div>
+
+        <div class="eco2-connector"><div class="eco2-dot"></div></div>
+
+        <!-- ROW 4: BTM / FTM 區域 -->
+        <div class="eco2-zones">
+
+          <!-- BTM 左側 -->
+          <div class="eco2-zone">
+            <div class="eco2-zone-title" data-i18n="eco.btm.title">Behind The Meter<span>（需要側）</span></div>
+            <div class="eco2-zone-cols">
+
+              <!-- 低圧 / 家庭向け -->
+              <div class="eco2-sub-col">
+                <div class="eco2-sub-label" data-i18n="eco.btm.low">低圧 / 家庭向け</div>
+                <div class="eco2-node eco2-node--product eco2-node--nd" data-i18n="eco.product.ecogenie">Ecogenie+</div>
+              </div>
+
+              <!-- 高圧 / 業務・産業用 -->
+              <div class="eco2-sub-col">
+                <div class="eco2-sub-label" data-i18n="eco.btm.high">高圧 / 業務・産業用</div>
+                <div class="eco2-node eco2-node--product eco2-node--nd" data-i18n="eco.product.enesense">EneSense</div>
+              </div>
+
+            </div>
+            <!-- API 連携 -->
+            <div class="eco2-node eco2-node--api eco2-node--nd" data-i18n="eco.api">API（WebAPI連携）</div>
+          </div>
+
+          <div class="eco2-zone-sep"></div>
+
+          <!-- FTM 右側 -->
+          <div class="eco2-zone">
+            <div class="eco2-zone-title" data-i18n="eco.ftm.title">Front of The Meter<span>（系統側）</span></div>
+            <div class="eco2-zone-cols">
+
+              <!-- 蓄電池 -->
+              <div class="eco2-sub-col">
+                <div class="eco2-sub-label" data-i18n="eco.ftm.battery">蓄電池</div>
+                <div class="eco2-node eco2-node--product eco2-node--nd" data-i18n="eco.product.ems">EMS</div>
+                <div class="eco2-node eco2-node--sys-item" data-i18n="eco.ftm.controller">サイトコントローラー</div>
+              </div>
+
+              <!-- 発電設備 -->
+              <div class="eco2-sub-col">
+                <div class="eco2-sub-label" data-i18n="eco.ftm.generation">発電設備</div>
+                <div class="eco2-node eco2-node--product eco2-node--nd" data-i18n="eco.product.ems">EMS</div>
+                <div class="eco2-node eco2-node--sys-item" data-i18n="eco.ftm.limiter">出力抑制機器</div>
+              </div>
+
+            </div>
+          </div>
+
+        </div><!-- /eco2-zones -->
+
+        <div class="eco2-connector"><div class="eco2-dot"></div></div>
+
+        <!-- ROW 5: DERs -->
+        <div class="eco2-row">
+          <div class="eco2-node eco2-node--ders" data-i18n="eco.row5">分散型エネルギーリソース（DER's）</div>
+        </div>
+
+        <!-- ROW 6: DER 類別 -->
+        <div class="eco2-der-row">
+          <div class="eco2-der-item" data-i18n="eco.der.residential">家庭用設備販売</div>
+          <div class="eco2-der-item" data-i18n="eco.der.commercial">業務用設備販売</div>
+          <div class="eco2-der-item eco2-der-item--nd" data-i18n="eco.der.battery">系統用蓄電池開発</div>
+          <div class="eco2-der-item eco2-der-item--nd" data-i18n="eco.der.powerplant">発電所開発</div>
+        </div>
+
+      </div><!-- /eco-diagram-v2 -->
+
+      <!-- 橫軸包裝器 -->
+      <div class="eco-x-axis-wrapper">
+        <div class="eco-x-axis">
+          <div class="eco-x-axis-arrow eco-x-axis-arrow--left"></div>
+          <span class="eco-x-axis-label" data-i18n="eco.bottom">エネルギー設備積別</span>
+          <div class="eco-x-axis-arrow eco-x-axis-arrow--right"></div>
+        </div>
+      </div>
+
+      </div><!-- /eco-diagram-wrapper -->
+    </div><!-- /eco-section -->
+
+  </div>
+
+</section>
+
+<!-- EMOTIONAL SCENE — 感性訴求 (Family) -->
+<section class="scene-band" id="mission">
+  <div class="scene-img" style="background-image:url('assets/scene_people.webp')"></div>
+  <div class="scene-overlay"></div>
+  <div class="wrap scene-text">
+    <h2 class="scene-h2" data-i18n="scene.title">用科技，<br>描繪未來藍圖</h2>
+    <p class="scene-body" data-i18n="scene.body">家庭から都市まで、エネルギーの流れを最適化し、<br>すべての人が恩恵を受けられる社会をつくる。</p>
+  </div>
+</section>
+
+<!-- SOLUTIONS -->
+<section id="solutions" class="solutions">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Solutions</div>
+      <h2 class="h2" data-i18n="sol.title">エンタープライズ<br>エネルギー管理</h2>
+      <p class="lead" data-i18n="sol.lead">あらゆる規模のビジネスに対応する<br>包括的なエネルギーソリューション</p>
+    </div>
+    <div class="sol-grid" id="solGrid">
+      <div class="sol-card">
+        <div class="sol-img-bg" style="background-image:url('assets/sol_hems2.jpg')"></div>
+        <div class="sol-overlay"></div>
+        <div class="sol-body">
+          <div class="sol-num">01</div>
+          <h3 class="sol-title" data-i18n="sol.card1.title">家庭エネルギー管理<br><span class="sol-en">HEMS</span></h3>
+          <p class="sol-desc" data-i18n="sol.card1.desc">スマートホームのエネルギーを可視化・最適化。太陽光・蓄電池・家電を一元管理。</p>
+          <div class="sol-arrow">→</div>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-img-bg" style="background-image:url('assets/sol_cems2.jpg')"></div>
+        <div class="sol-overlay"></div>
+        <div class="sol-body">
+          <div class="sol-num">02</div>
+          <h3 class="sol-title" data-i18n="sol.card2.title">企業エネルギー管理<br><span class="sol-en">CEMS</span></h3>
+          <p class="sol-desc" data-i18n="sol.card2.desc">ビルや工場のエネルギーコストを削減。AIによる需要予測で最適運用を実現。</p>
+          <div class="sol-arrow">→</div>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-img-bg" style="background-image:url('assets/sol_bess2.jpg')"></div>
+        <div class="sol-overlay"></div>
+        <div class="sol-body">
+          <div class="sol-num">03</div>
+          <h3 class="sol-title" data-i18n="sol.card3.title">表前電力所<br><span class="sol-en">BESS</span></h3>
+          <p class="sol-desc" data-i18n="sol.card3.desc">大規模蓄電システムによる電力安定化。再生可能エネルギーの価値を最大化。</p>
+          <div class="sol-arrow">→</div>
+        </div>
+      </div>
+      <div class="sol-card sol-card--featured">
+        <div class="sol-img-bg" style="background-image:url('assets/sol_vpp2.jpg')"></div>
+        <div class="sol-overlay"></div>
+        <div class="sol-body">
+          <div class="sol-num">04</div>
+          <h3 class="sol-title" data-i18n="sol.card4.title">仮想発電所・<br>アグリゲーション<br><span class="sol-en">VPP</span></h3>
+          <p class="sol-desc" data-i18n="sol.card4.desc">分散型エネルギーリソースを束ね、電力市場に直接参加。2026年低圧取引に対応。</p>
+          <div class="sol-arrow">→</div>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-img-bg" style="background-image:url('assets/sol_ev2.jpg')"></div>
+        <div class="sol-overlay"></div>
+        <div class="sol-body">
+          <div class="sol-num">05</div>
+          <h3 class="sol-title" data-i18n="sol.card5.title">EV充電インフラ<br><span class="sol-en">CPO</span></h3>
+          <p class="sol-desc" data-i18n="sol.card5.desc">スマート充電管理でEVをエネルギーリソースとして活用。V2Gにも対応。</p>
+          <div class="sol-arrow">→</div>
+        </div>
+      </div>
+      <div class="sol-card">
+        <div class="sol-img-bg" style="background-image:url('assets/sol_api2.jpg')"></div>
+        <div class="sol-overlay"></div>
+        <div class="sol-body">
+          <div class="sol-num">06</div>
+          <h3 class="sol-title" data-i18n="sol.card6.title">エネルギーデータ<br>API・開発者向け<br><span class="sol-en">Data API</span></h3>
+          <p class="sol-desc" data-i18n="sol.card6.desc">豊富なエネルギーデータAPIで、パートナー企業のサービス開発を加速。</p>
+          <div class="sol-arrow">→</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- GROUP -->
+<section class="group" id="group">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="group.eyebrow">About Us</div>
+      <h2 class="h2" data-i18n="group.title">NextDriveグループ</h2>
+      <p class="lead" data-i18n="group.lead">エネルギーIoTプラットフォームの<br>グローバルリーダー</p>
+    </div>
+    <div class="group-lead-block">
+      <p class="group-lead-text" data-i18n="group.body">NextDrive（聯齊科技）は、日本と台湾を中核拠点とし、グローバルに展開する<em>IoE（エネルギー・イオット）</em>プラットフォーム技術を核に、次世代型エネルギーソリューション・グループです。IoEとエネルギー・バリューチェーン全体を統合し、企業の導入リスクを最小化しながら、エネルギーの資源化を実現します。</p>
+    </div>
+    <!-- Company Profile Table -->
+    <div class="group-profile-table">
+      <div class="profile-table-label" data-i18n="group.profile.label">會社概要</div>
+      <table class="profile-table">
+        <tr>
+          <td class="profile-label" data-i18n-key="group.profile.company_name_zh" data-i18n-key-en="group.profile.company_name_en" data-i18n-key-jp="group.profile.company_name_jp">公司名稱</td>
+          <td class="profile-value" data-i18n-key="group.profile.company_name_value_zh" data-i18n-key-en="group.profile.company_name_value_en" data-i18n-key-jp="group.profile.company_name_value_jp">NextDrive Holdings 株式会社</td>
+        </tr>
+        <tr>
+          <td class="profile-label" data-i18n-key="group.profile.representative_zh" data-i18n-key-en="group.profile.representative_en" data-i18n-key-jp="group.profile.representative_jp">董事長</td>
+          <td class="profile-value" data-i18n-key="group.profile.representative_value_zh" data-i18n-key-en="group.profile.representative_value_en" data-i18n-key-jp="group.profile.representative_value_jp">顏哲淵</td>
+        </tr>
+        <tr>
+          <td class="profile-label" data-i18n-key="group.profile.capital_zh" data-i18n-key-en="group.profile.capital_en" data-i18n-key-jp="group.profile.capital_jp">資本金</td>
+          <td class="profile-value" data-i18n-key="group.profile.capital_value_zh" data-i18n-key-en="group.profile.capital_value_en" data-i18n-key-jp="group.profile.capital_value_jp">30,000,000圓</td>
+        </tr>
+        <tr>
+          <td class="profile-label" data-i18n-key="group.profile.location_zh" data-i18n-key-en="group.profile.location_en" data-i18n-key-jp="group.profile.location_jp">總部地址</td>
+          <td class="profile-value" data-i18n-key="group.profile.location_value_zh" data-i18n-key-en="group.profile.location_value_en" data-i18n-key-jp="group.profile.location_value_jp">〒105-0012 東京都港區芝大門1丁目2-14</td>
+        </tr>
+        <tr>
+          <td class="profile-label" data-i18n-key="group.profile.business_zh" data-i18n-key-en="group.profile.business_en" data-i18n-key-jp="group.profile.business_jp">業務內容</td>
+          <td class="profile-value" data-i18n-key="group.profile.business_value_zh" data-i18n-key-en="group.profile.business_value_en" data-i18n-key-jp="group.profile.business_value_jp">集團子公司之經營管理及相關附帶業務</td>
+        </tr>
+        <tr>
+          <td class="profile-label" data-i18n-key="group.profile.subsidiary_zh" data-i18n-key-en="group.profile.subsidiary_en" data-i18n-key-jp="group.profile.subsidiary_jp">子公司業務範疇</td>
+          <td class="profile-value" data-i18n-key="group.profile.subsidiary_value_zh" data-i18n-key-en="group.profile.subsidiary_value_en" data-i18n-key-jp="group.profile.subsidiary_value_jp">1. 提供能源管理服務 (EMS)</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Business Map Section Title -->
+    <div class="group-section-title" data-i18n="group.business_map.label">NextDrive 事業版圖</div>
+    <div class="grp-co-grid grp-co-grid-plan4c" id="grpGrid">
+
+      <!-- NextDrive KK -->
+      <div class="grp-co-card">
+        <div class="grp-co-header">
+          <div class="grp-co-region" data-i18n="group.co1.region">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <circle cx="5" cy="5" r="4" stroke="#3B9EFF" stroke-width="1.2"/>
+              <circle cx="5" cy="5" r="1.5" fill="#3B9EFF"/>
+            </svg>
+            東京、日本
+          </div>
+          <h3 class="grp-co-name" data-i18n="group.co1.name">NextDrive KK</h3>
+          <div class="grp-co-rule"></div>
+          <p class="grp-co-desc" data-i18n="group.co1.desc">日本市場における事業展開の中核。電力システム改革に対応した IoE ソリューションを提供。</p>
+          <a class="grp-co-url" href="https://nextdrive.io/ja" target="_blank" rel="noopener noreferrer">nextdrive.io/ja</a>
+        </div>
+      </div>
+
+      <!-- GREX ENERGY -->
+      <div class="grp-co-card">
+        <div class="grp-co-header">
+          <div class="grp-co-region" data-i18n="group.co2.region">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <circle cx="5" cy="5" r="4" stroke="#3B9EFF" stroke-width="1.2"/>
+              <circle cx="5" cy="5" r="1.5" fill="#3B9EFF"/>
+            </svg>
+            東京、日本
+          </div>
+          <h3 class="grp-co-name" data-i18n="group.co2.name">GREX ENERGY</h3>
+          <div class="grp-co-rule"></div>
+          <p class="grp-co-desc" data-i18n="group.co2.desc">エネルギーアグリゲーションプラットフォームの開発・運営。VPP 事業の中核企業。</p>
+          <a class="grp-co-url" href="https://grex-energy.co.jp" target="_blank" rel="noopener noreferrer">grex-energy.co.jp</a>
+        </div>
+      </div>
+
+      <!-- NextDrive Co. -->
+      <div class="grp-co-card">
+        <div class="grp-co-header">
+          <div class="grp-co-region" data-i18n="group.co3.region">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <circle cx="5" cy="5" r="4" stroke="#3B9EFF" stroke-width="1.2"/>
+              <circle cx="5" cy="5" r="1.5" fill="#3B9EFF"/>
+            </svg>
+            台北、台湾
+          </div>
+          <h3 class="grp-co-name" data-i18n="group.co3.name">NextDrive Co.</h3>
+          <div class="grp-co-rule"></div>
+          <p class="grp-co-desc" data-i18n="group.co3.desc">ASEAN 市場への展開を担う。IoE プラットフォームの研究開発拠点。</p>
+          <a class="grp-co-url" href="https://nextdrive.io" target="_blank" rel="noopener noreferrer">nextdrive.io</a>
+        </div>
+      </div>
+
+      <!-- SKYLEY -->
+      <div class="grp-co-card">
+        <div class="grp-co-header">
+          <div class="grp-co-region" data-i18n="group.co4.region">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+              <circle cx="5" cy="5" r="4" stroke="#3B9EFF" stroke-width="1.2"/>
+              <circle cx="5" cy="5" r="1.5" fill="#3B9EFF"/>
+            </svg>
+            グローバル
+          </div>
+          <h3 class="grp-co-name" data-i18n="group.co4.name">SKYLEY</h3>
+          <div class="grp-co-rule"></div>
+          <p class="grp-co-desc" data-i18n="group.co4.desc">通信・インフラ技術の専門企業。グループ全体の技術基盤を支える。</p>
+          <a class="grp-co-url" href="https://www.skyley.com/english/index.html" target="_blank" rel="noopener noreferrer">skyley.com</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- Board Section Title -->
+    <div class="group-section-title" data-i18n="group.board.label">董事會介紹</div>
+    <!-- Board Members Grid -->
+    <div class="board-members-grid">
+      <!-- Member 1 -->
+      <div class="board-member-card">
+        <div class="board-member-title" data-i18n="group.board.member1.title">取締役會長</div>
+        <div class="board-member-name" data-i18n="group.board.member1.name">顧昔湖</div>
+        <div class="board-member-desc" data-i18n="group.board.member1.desc">NextDrive（聯齊科技）創業者兼CEO</div>
+      </div>
+      <!-- Member 2 -->
+      <div class="board-member-card">
+        <div class="board-member-title" data-i18n="group.board.member2.title">取締役</div>
+        <div class="board-member-name" data-i18n="group.board.member2.name">陳宣賀</div>
+        <div class="board-member-desc" data-i18n="group.board.member2.desc">灣海精密工業股份有限公司 シニアマネージャー</div>
+      </div>
+      <!-- Member 3 -->
+      <div class="board-member-card">
+        <div class="board-member-title" data-i18n="group.board.member3.title">取締役</div>
+        <div class="board-member-name" data-i18n="group.board.member3.name">陳良信</div>
+        <div class="board-member-desc" data-i18n="group.board.member3.desc">Maktar（民傑資料）創業者兼CEO</div>
+      </div>
+      <!-- Member 4 -->
+      <div class="board-member-card">
+        <div class="board-member-title" data-i18n="group.board.member4.title">取締役</div>
+        <div class="board-member-name" data-i18n="group.board.member4.name">陳佑怡</div>
+        <div class="board-member-desc" data-i18n="group.board.member4.desc">鍵升綠能股份有限公司 經經理</div>
+      </div>
+      <!-- Member 5 -->
+      <div class="board-member-card">
+        <div class="board-member-title" data-i18n="group.board.member5.title">取締役</div>
+        <div class="board-member-name" data-i18n="group.board.member5.name">石聖弘</div>
+        <div class="board-member-desc" data-i18n="group.board.member5.desc">NextDrive（聯齊科技）DGX 事業部長</div>
+      </div>
+      <!-- Member 6 -->
+      <div class="board-member-card">
+        <div class="board-member-title" data-i18n="group.board.member6.title">取締役</div>
+        <div class="board-member-name" data-i18n="group.board.member6.name">孫紹祖</div>
+        <div class="board-member-desc" data-i18n="group.board.member6.desc">美商中經合集團 パートナー</div>
+      </div>
+      <!-- Auditor Member -->
+      <div class="board-auditor-card">
+        <div class="board-auditor-content">
+          <div class="board-member-title" data-i18n="group.auditor.title">\u76e3\u5bdf\u4eba</div>
+          <div class="board-member-name" data-i18n="group.auditor.name">\u6797\u4fca\u5f6c</div>
+          <div class="board-member-desc" data-i18n="group.auditor.desc">\u76e3\u5bdf\u4eba</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="foot-logo" src="assets/logo_white.png" alt="nextDrive">
+        <p class="foot-tagline" data-i18n="footer.tagline">Make Energy Count</p>
+        <div class="foot-offices" data-i18n="footer.offices">東京、日本 ｜ 台北、台湾</div>
+      </div>
+
+      <div class="fcol">
+        <h4 data-i18n="footer.col2.title">集團資訊</h4>
+        <a href="#" data-i18n="footer.col2.item1">私たちについて</a>
+        <a href="#" data-i18n="footer.col2.item2">ニュース</a>
+        <a href="#" data-i18n="footer.col2.item4">お問い合わせ</a>
+      </div>
+      <div class="fcol">
+        <h4 data-i18n="footer.col3.title">グループ企業</h4>
+        <a href="#" data-i18n="footer.col3.item1">NextDrive KK</a>
+        <a href="#" data-i18n="footer.col3.item2">GREX ENERGY</a>
+        <a href="#" data-i18n="footer.col3.item3">NextDrive Co.</a>
+        <a href="#" data-i18n="footer.col3.item4">SKYLEY</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span class="legal" data-i18n="footer.copyright">© 2026 NextDrive Holdings. All rights reserved.</span>
+      <span class="links">
+        <a href="#" data-i18n="footer.privacy">プライバシーポリシー</a>
+        <a href="#" data-i18n="footer.terms">利用規約</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+<script src="solutions_detail.js"></script>
+<script>
+/* Solutions — click a card to expand a full-width detail drawer */
+(function(){
+  const grid = document.getElementById('solGrid');
+  if(!grid) return;
+  const cards = Array.from(grid.querySelectorAll('.sol-card'));
+  if(!cards.length) return;
+
+  const detail = document.createElement('div');
+  detail.className = 'sol-detail';
+  detail.innerHTML = '<div class="sol-detail-inner"></div>';
+  const inner = detail.querySelector('.sol-detail-inner');
+  let openIdx = -1;
+
+  function columns(){
+    return getComputedStyle(grid).gridTemplateColumns.split(' ').filter(Boolean).length || 1;
+  }
+  function placeAfterRowOf(i){
+    const cols = columns();
+    const rowEnd = Math.min((Math.floor(i/cols)+1)*cols - 1, cards.length-1);
+    const anchor = cards[rowEnd];
+    if(anchor.nextSibling !== detail) grid.insertBefore(detail, anchor.nextSibling);
+  }
+  function currentLang(){
+    const a = document.querySelector('[data-lang].active');
+    return (a && a.getAttribute('data-lang')) || 'ja';
+  }
+  function bold(s){
+    // wrap the label before the first ： or : in <b>
+    let i = s.indexOf('\uff1a');
+    if(i>=0) return '<b>'+s.slice(0,i+1)+'</b>'+s.slice(i+1);
+    i = s.indexOf(': ');
+    if(i>=0) return '<b>'+s.slice(0,i+1)+'</b> '+s.slice(i+2);
+    return s;
+  }
+  function render(i){
+    const card = cards[i];
+    const num = (card.querySelector('.sol-num')||{}).textContent || '';
+    // eyebrow code + localized title come from the card itself (kept in sync via i18n)
+    let raw = (card.querySelector('.sol-title')||{}).innerHTML || '';
+    raw = raw.replace(/<br\s*\/?>/gi, '\n');
+    const tmp = document.createElement('div'); tmp.innerHTML = raw;
+    const parts = (tmp.textContent || '').split('\n').map(s=>s.trim()).filter(Boolean);
+    const code = parts.length > 1 ? parts[parts.length-1] : '';
+    const main = (parts.length > 1 ? parts.slice(0,-1) : parts).join(' ');
+    // detail copy from solutions_detail.js (editable content file)
+    const data = (window.SOL_DETAIL && window.SOL_DETAIL['card'+(i+1)]) || null;
+    const d = data ? (data[currentLang()] || data.ja || data.en || data.zh) : null;
+    const sub = d && d.sub ? '<div class="sd-sub">' + d.sub + '</div>' : '';
+    const lead = d && d.lead ? '<p class="sd-lead">' + d.lead + '</p>' : '';
+    let bullets = '';
+    if(d && d.bullets && d.bullets.length){
+      bullets = '<ul class="sd-list">' + d.bullets.map(function(b){ return '<li>'+bold(b)+'</li>'; }).join('') + '</ul>';
+    } else {
+      // fallback to the short card description if no detail copy is defined
+      const desc = (card.querySelector('.sol-desc')||{}).innerHTML || '';
+      bullets = '<p class="sd-lead">' + desc + '</p>';
+    }
+    inner.innerHTML =
+      '<button class="sd-close" aria-label="close">\u2715</button>' +
+      '<div class="sd-text">' +
+        '<div class="sd-eyebrow">' + num + (code ? ' / ' + code : '') + '</div>' +
+        '<h3 class="sd-title">' + main + '</h3>' +
+        sub +
+        '<div class="sd-divider"></div>' +
+        lead +
+      '</div>' +
+      '<div class="sd-cols">' + bullets + '</div>';
+    inner.querySelector('.sd-close').addEventListener('click', function(e){ e.stopPropagation(); close(); });
+  }
+  function open(i){
+    const wasOpen = openIdx > -1;
+    render(i);
+    if(!wasOpen){ detail.classList.remove('is-open'); detail.style.maxHeight = '0px'; }
+    placeAfterRowOf(i);
+    cards.forEach((c,idx)=>c.classList.toggle('is-active', idx===i));
+    void detail.offsetHeight;
+    detail.classList.add('is-open');
+    detail.style.maxHeight = inner.scrollHeight + 'px';
+    openIdx = i;
+    // smoothly bring the opened card to the centre of the screen
+    const r = cards[i].getBoundingClientRect();
+    const target = r.top + window.scrollY + r.height/2 - window.innerHeight/2;
+    window.scrollTo({ top: Math.max(0, target), behavior: 'smooth' });
+  }
+  function close(){
+    detail.classList.remove('is-open');
+    detail.style.maxHeight = '0px';
+    cards.forEach(c=>c.classList.remove('is-active'));
+    const node = detail;
+    setTimeout(function(){ if(!node.classList.contains('is-open') && node.parentNode) node.remove(); }, 500);
+    openIdx = -1;
+  }
+  cards.forEach((card,i)=> card.addEventListener('click', function(){ openIdx===i ? close() : open(i); }));
+
+  let rt;
+  window.addEventListener('resize', function(){
+    clearTimeout(rt);
+    rt = setTimeout(function(){
+      if(openIdx > -1){ placeAfterRowOf(openIdx); detail.style.maxHeight = inner.scrollHeight + 'px'; }
+    }, 120);
+  });
+  // language switch -> re-render the open drawer in the new language
+  // (deferred so site.js applyLang + .active update run first)
+  document.querySelectorAll('[data-lang]').forEach(b=> b.addEventListener('click', function(){
+    if(openIdx>-1){ const k=openIdx; setTimeout(function(){ if(openIdx===k){ render(k); detail.style.maxHeight = inner.scrollHeight + 'px'; } }, 60); }
+  }));
+})();
+</script>
+</body>
