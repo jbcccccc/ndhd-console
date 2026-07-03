@@ -809,11 +809,17 @@
     // detail copy from solutions_detail.js (editable content file)
     const data = (window.SOL_DETAIL && window.SOL_DETAIL['card'+(i+1)]) || null;
     const d = data ? (data[currentLang()] || data.ja || data.en || data.zh) : null;
-    const sub = d && d.sub ? '<div class="sd-sub">' + d.sub + '</div>' : '';
-    const lead = d && d.lead ? '<p class="sd-lead">' + d.lead + '</p>' : '';
+    // key prefix matches the row.key format used by solutions_detail.js in the
+    // i18n console ("solutions.cardN.sub" / ".lead" / ".bullets") so the
+    // preview panel's click-to-highlight sync can find these elements —
+    // previously these had no data-i18n tag at all, so mouse-over/click sync
+    // silently fell back to highlighting just the card title.
+    const dKey = 'solutions.card' + (i+1);
+    const sub = d && d.sub ? '<div class="sd-sub" data-i18n="' + dKey + '.sub">' + d.sub + '</div>' : '';
+    const lead = d && d.lead ? '<p class="sd-lead" data-i18n="' + dKey + '.lead">' + d.lead + '</p>' : '';
     let bullets = '';
     if(d && d.bullets && d.bullets.length){
-      bullets = '<ul class="sd-list">' + d.bullets.map(function(b){ return '<li>'+bold(b)+'</li>'; }).join('') + '</ul>';
+      bullets = '<ul class="sd-list" data-i18n="' + dKey + '.bullets">' + d.bullets.map(function(b){ return '<li>'+bold(b)+'</li>'; }).join('') + '</ul>';
     } else {
       // fallback to the short card description if no detail copy is defined
       const desc = (card.querySelector('.sol-desc')||{}).innerHTML || '';
