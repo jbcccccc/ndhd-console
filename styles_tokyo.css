@@ -214,9 +214,33 @@ img { display: block; max-width: 100%; }
   height: 100vh;
   min-height: 700px;
   display: flex;
-  align-items: center;
+  align-items: safe center; /* center vertically, but never overflow past the top edge (stays below nav on short viewports) */
   justify-content: center;
   overflow: hidden;
+  padding-top: 72px; /* reserve fixed-nav height so hero content sits below the nav, never overlapping it */
+}
+
+/* Short viewports: anchor hero content just below the nav instead of centering,
+   and scale the oversized title down so it can never ride up into the fixed nav.
+   Selectors are scoped (.hero .hero-content etc.) to out-rank the later base rules. */
+@media (max-height: 900px) {
+  .hero {
+    align-items: flex-start;
+    padding-top: 96px;
+  }
+  .hero .hero-content {
+    padding-top: 1rem;
+  }
+  .hero .hero-h1 {
+    margin-bottom: 1rem;
+  }
+  .hero .hero-h1-main {
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+    margin-bottom: 0.75rem;
+  }
+  .hero .hero-sub {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .hero-bg-fixed {
@@ -277,7 +301,7 @@ img { display: block; max-width: 100%; }
 
 .hero-h1-main {
   display: block;
-  font-size: clamp(2.8rem, 7vw, 5rem);
+  font-size: clamp(2.8rem, 5.5vw, 4.25rem);
   font-weight: 900;
   margin-bottom: 1.5rem;
   letter-spacing: -1px;
