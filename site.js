@@ -947,7 +947,9 @@ document.addEventListener('DOMContentLoaded', () => {
     try { localStorage.setItem('ndhd_lang', lang); } catch (e) {}
     const p = new URLSearchParams(location.search);
     p.set('lang', lang);
-    history.replaceState(null, '', location.pathname + '?' + p.toString() + location.hash);
+    // 沙盒環境（例如 console 預覽用的 srcdoc iframe）網址與 origin 不符時，
+    // replaceState 會拋出 SecurityError；正式網站網域正常，這裡用 try/catch 靜默防呆。
+    try { history.replaceState(null, '', location.pathname + '?' + p.toString() + location.hash); } catch (e) {}
   }));
 
   // 初始化 logo 顏色
