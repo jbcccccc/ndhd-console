@@ -3,7 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NextDrive Holdings</title>
+
+<!-- Primary SEO — 預設日文；site.js 會依語言切換 title/description -->
+<title>NextDrive Holdings｜分散型エネルギーをつなぐ IoE プラットフォーム</title>
+<meta name="description" content="NextDrive Holdings は日本・台湾を中核に、IoE（Internet of Energy）プラットフォームで分散型エネルギーを統合。VPP・蓄電・電力取引で次世代のデジタルエネルギーインフラを構築します。">
+<meta name="keywords" content="NextDrive, IoE, Internet of Energy, VPP, 仮想発電所, BESS, 蓄電池, 分散型エネルギー, エネルギーマネジメント, HEMS, CEMS, 電力取引, 聯齊科技">
+<meta name="author" content="NextDrive Holdings">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0a2540">
+<link rel="canonical" href="https://nextdrive-holdings.co.jp/">
+
+<!-- 單一網址 + 前端 JS 語言切換：不使用 hreflang（hreflang 需各語言獨立網址才有效）。
+     移植 WordPress 後，以下 SEO 標籤改由 Yoast 產生，請勿保留在 header.php 中重複輸出。 -->
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NextDrive Holdings">
+<meta property="og:title" content="NextDrive Holdings｜分散型エネルギーをつなぐ IoE プラットフォーム">
+<meta property="og:description" content="日本・台湾を中核に、IoE プラットフォームで分散型エネルギーを統合。VPP・蓄電・電力取引で次世代のデジタルエネルギーインフラを構築します。">
+<meta property="og:url" content="https://nextdrive-holdings.co.jp/">
+<meta property="og:image" content="https://nextdrive-holdings.co.jp/assets/hero_bg_tokyo.jpg">
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1152">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NextDrive Holdings｜分散型エネルギーをつなぐ IoE プラットフォーム">
+<meta name="twitter:description" content="日本・台湾を中核に、IoE プラットフォームで分散型エネルギーを統合。VPP・蓄電・電力取引で次世代のデジタルエネルギーインフラを構築します。">
+<meta name="twitter:image" content="https://nextdrive-holdings.co.jp/assets/hero_bg_tokyo.jpg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/logo_black.png">
+<link rel="apple-touch-icon" href="assets/logo_black.png">
+
+<!-- Structured data — Organization (Google Knowledge Panel / AI 摘要) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NextDrive Holdings",
+  "legalName": "NextDrive Holdings 株式会社",
+  "alternateName": ["聯齊科技", "NextDrive"],
+  "url": "https://nextdrive-holdings.co.jp/",
+  "logo": "https://nextdrive-holdings.co.jp/assets/logo_black.png",
+  "image": "https://nextdrive-holdings.co.jp/assets/hero_bg_tokyo.jpg",
+  "description": "NextDrive Holdings is a next-generation energy solutions group built on IoE (Internet of Energy) platform technology, headquartered in Japan and Taiwan. It integrates distributed energy resources into virtual power plants (VPP) across the energy value chain.",
+  "foundingDate": "2020",
+  "industry": "Energy Technology / Internet of Energy",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1-2-14 Shibadaimon, Minato-ku",
+    "addressLocality": "Tokyo",
+    "postalCode": "105-0012",
+    "addressCountry": "JP"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Che-Yuan YEN"
+  },
+  "sameAs": [
+    "https://www.nextdrive.io/",
+    "https://www.nextdrive.io/ja/",
+    "https://grex-energy.co.jp/",
+    "https://www.skyley.com/"
+  ],
+  "subOrganization": [
+    { "@type": "Organization", "name": "NextDrive KK", "url": "https://nextdrive.io/ja" },
+    { "@type": "Organization", "name": "GREX ENERGY", "url": "https://grex-energy.co.jp" },
+    { "@type": "Organization", "name": "NextDrive Co.", "url": "https://nextdrive.io" },
+    { "@type": "Organization", "name": "SKYLEY", "url": "https://www.skyley.com/english/index.html" }
+  ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;800&family=Noto+Sans+TC:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -31,10 +106,31 @@
         <button data-lang="en">EN</button>
         <button data-lang="ja" class="active">日</button>
       </div>
-      <a class="nav-cta" href="#group" data-i18n="nav.contact">お問い合わせ</a>
+      <a class="nav-cta" href="#contact" data-i18n="nav.contact">お問い合わせ</a>
     </div>
+    <button class="nav-burger" id="navBurger" aria-label="メニュー" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
+<!-- MOBILE MENU DRAWER -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav class="mobile-menu-inner" aria-label="モバイルメニュー">
+    <a class="mobile-link" href="#news" data-i18n="nav.news">ニュース</a>
+    <a class="mobile-link" href="#mission" data-i18n="nav.mission">Mission</a>
+    <a class="mobile-link" href="#technology" data-i18n="nav.technology">テクノロジー</a>
+    <a class="mobile-link" href="#solutions" data-i18n="nav.solutions">ソリューション</a>
+    <a class="mobile-link" href="#group" data-i18n="nav.group">グループ</a>
+    <div class="mobile-lang" role="group" aria-label="Language">
+      <button data-lang="zh">中</button>
+      <button data-lang="en">EN</button>
+      <button data-lang="ja" class="active">日</button>
+    </div>
+    <a class="mobile-cta" href="#contact" data-i18n="nav.contact">お問い合わせ</a>
+  </nav>
+</div>
+<div class="mobile-menu-backdrop" id="mobileMenuBackdrop" hidden></div>
 
 <!-- HERO — 全螢幕固定背景首屏 -->
 <header class="hero" id="hero">
@@ -711,9 +807,9 @@
       <!-- Auditor Member -->
       <div class="board-auditor-card">
         <div class="board-auditor-content">
-          <div class="board-member-title" data-i18n="group.auditor.title">\u76e3\u5bdf\u4eba</div>
-          <div class="board-member-name" data-i18n="group.auditor.name">\u6797\u4fca\u5f6c</div>
-          <div class="board-member-desc" data-i18n="group.auditor.desc">\u76e3\u5bdf\u4eba</div>
+          <div class="board-member-title" data-i18n="group.auditor.title">監査役</div>
+          <div class="board-member-name" data-i18n="group.auditor.name">林俊彬</div>
+          <div class="board-member-desc" data-i18n="group.auditor.desc"></div>
         </div>
       </div>
     </div>
@@ -721,6 +817,93 @@
 </section>
 
 
+<!-- CONTACT / HUBSPOT FORM -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="contact.eyebrow">Contact Us</div>
+      <h2 class="h2" data-i18n="contact.title">お問い合わせ</h2>
+      <p class="lead" data-i18n="contact.lead">エネルギーソリューション、投資に関するご相談、パートナーシップなど、あらゆるお問い合わせを承ります。下記フォームにご記入いただければ、担当者より折り返しご連絡いたします。</p>
+    </div>
+    <div class="contact-form-card">
+      <!-- HubSpot 表單（官方新版 embed）：上線後由此渲染真表單 -->
+      <div class="hs-form-frame" data-region="eu1" data-form-id="98505f39-9162-4cac-9a48-9da055b0dcb1" data-portal-id="27231044"></div>
+
+      <!-- 靜態複本：預覽／簡報用。HubSpot 真表單載入後會自動隱藏此區塊 -->
+      <form class="ndhd-form-mock" id="ndhdFormMock" novalidate aria-label="Contact form preview">
+        <p class="fm-intro">We'd love to hear from you! Please fill out the form and we'll get back to you as soon as possible.</p>
+
+        <div class="fm-row">
+          <div class="fm-field">
+            <label>Full Name｜氏名｜姓名</label>
+            <input type="text" name="fullname" autocomplete="name">
+          </div>
+          <div class="fm-field">
+            <label>Country or Region｜国・地域｜國家、地區<span class="fm-req">*</span></label>
+            <input type="text" name="country" autocomplete="country-name">
+          </div>
+        </div>
+
+        <div class="fm-field">
+          <label>Company Name｜法人名｜公司名稱<span class="fm-req">*</span></label>
+          <input type="text" name="company" autocomplete="organization">
+        </div>
+
+        <div class="fm-row">
+          <div class="fm-field">
+            <label>Department｜部署名｜部門<span class="fm-req">*</span></label>
+            <input type="text" name="department">
+          </div>
+          <div class="fm-field">
+            <label>Job Title｜役職｜職稱<span class="fm-req">*</span></label>
+            <input type="text" name="jobtitle" autocomplete="organization-title">
+          </div>
+        </div>
+
+        <div class="fm-field">
+          <label>Email Address｜メールアドレス｜電子郵件<span class="fm-req">*</span></label>
+          <input type="email" name="email" autocomplete="email">
+        </div>
+
+        <div class="fm-field">
+          <label>Phone Number｜電話番号｜電話號碼<span class="fm-req">*</span></label>
+          <div class="fm-phone">
+            <span class="fm-phone-flag" aria-hidden="true">🇹🇼</span>
+            <input type="tel" name="phone" value="+886" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="fm-field">
+          <label>Inquiry Type｜お問い合わせ種別｜洽詢類別<span class="fm-req">*</span></label>
+          <select name="inquiry_type" defaultvalue="">
+            <option value="" disabled selected></option>
+            <option value="investment">Investment｜投資に関するお問い合わせ｜投資洽詢</option>
+            <option value="solutions">Solutions｜ソリューション｜解決方案</option>
+            <option value="partnership">Partnership｜パートナーシップ｜合作機會</option>
+            <option value="media">Media / PR｜メディア｜媒體採訪</option>
+            <option value="other">Other｜その他｜其他</option>
+          </select>
+        </div>
+
+        <div class="fm-field">
+          <label>Message｜お問い合せ内容｜洽詢內容</label>
+          <textarea name="message" rows="4"></textarea>
+        </div>
+
+        <label class="fm-consent">
+          <input type="checkbox" name="consent">
+          <span>I have read and agree that the Company may collect, process, and use the personal data submitted in this form in accordance with the Privacy Policy, for the purpose of responding to this inquiry.　本フォームで入力した個人情報は、「個人情報保護法に基づく通知事項及びプライバシーポリシー」に従って収集・処理・利用されることに同意します（本お問い合わせへの回答を目的とします）。　本人已閱讀並同意，本公司依「個人資料保護法告知事項通知暨隱私權政策」蒐集、處理及利用本表單所填寫之個人資料，以用於回覆本次洽詢。<span class="fm-req">*</span></span>
+        </label>
+
+        <div class="fm-actions">
+          <button type="submit" class="fm-submit">Submit</button>
+        </div>
+        <p class="fm-preview-note" data-i18n="contact.preview_note">※ これは表示プレビューです。実際のフォームは公開サイトで HubSpot により表示されます。</p>
+      </form>
+    </div>
+    <p class="contact-fallback"><span data-i18n="contact.fallback">フォームが表示されない場合は、</span><a href="https://g7nlw.share-eu1.hsforms.com/2mFBfOZFiTKyaSJ2gVbDcsQ" target="_blank" rel="noopener noreferrer" data-i18n="contact.fallback.link">こちらからお問い合わせください</a></p>
+  </div>
+</section>
 
 
 
@@ -761,6 +944,34 @@
 
 <script src="site.js"></script>
 <script src="solutions_detail.js"></script>
+
+<!-- HubSpot Forms 嵌入（EU1 hublet，官方新版 embed） -->
+<script src="https://js-eu1.hsforms.net/forms/embed/27231044.js" defer></script>
+<script>
+  (function () {
+    var frame = document.querySelector('.hs-form-frame');
+    var mock = document.getElementById('ndhdFormMock');
+    // 真表單成功注入後，隱藏靜態複本
+    if (frame && mock) {
+      var obs = new MutationObserver(function () {
+        if (frame.querySelector('form, iframe')) {
+          mock.style.display = 'none';
+          obs.disconnect();
+        }
+      });
+      obs.observe(frame, { childList: true, subtree: true });
+      setTimeout(function () { obs.disconnect(); }, 12000);
+    }
+    // 複本僅供預覽，攔截送出
+    if (mock) {
+      mock.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var note = mock.querySelector('.fm-preview-note');
+        if (note) { note.style.color = 'var(--blue-accent)'; }
+      });
+    }
+  })();
+</script>
 <script>
 /* Solutions — click a card to expand a full-width detail drawer */
 (function(){

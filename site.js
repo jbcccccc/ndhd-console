@@ -132,6 +132,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'milestone.label2': "\u53ef\u8abf\u5ea6\u5206\u6563\u5f0f\u80fd\u6e90",
       'milestone.label3': "\u6210\u7acb",
       'milestone.label4': "\u6771\u8a3c \u2014 Top 14",
+      'contact.eyebrow': "Contact Us",
+      'contact.preview_note': "\u203b \u9019\u662f\u7248\u9762\u9810\u89bd\uff0c\u5be6\u969b\u8868\u55ae\u5c07\u65bc\u6b63\u5f0f\u7db2\u7ad9\u7531 HubSpot \u986f\u793a\u3002",
+      'contact.title': "\u8207\u6211\u5011\u806f\u7e6b",
+      'contact.lead': "\u7121\u8ad6\u662f\u80fd\u6e90\u89e3\u6c7a\u65b9\u6848\u3001\u6295\u8cc7\u6d3d\u8a62\u6216\u5408\u4f5c\u6a5f\u6703\uff0c\u6b61\u8fce\u8207\u6211\u5011\u806f\u7e6b\u3002\u8acb\u586b\u5beb\u4e0b\u65b9\u8868\u55ae\uff0c\u6211\u5011\u5c07\u76e1\u5feb\u56de\u8986\u60a8\u3002",
+      'contact.fallback': "\u82e5\u8868\u55ae\u672a\u6b63\u5e38\u986f\u793a\uff0c",
+      'contact.fallback.link': "\u8acb\u9ede\u6b64\u806f\u7d61\u6211\u5011",
       'nav.contact': "\u806f\u7d61\u6211\u5011",
       'nav.group': "\u96c6\u5718\u4ecb\u7d39",
       'nav.news': "\u6700\u65b0\u6d88\u606f",
@@ -261,29 +267,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'mission.body': "NextDrive Holdings \u4ee5\u80fd\u6e90\u7269\u806f\u7db2\u5e73\u53f0\uff08Internet of Energy Platform\uff09\u70ba\u6838\u5fc3\uff0c\u6253\u9020\u4e0b\u4e00\u4ee3\u7684\u6578\u4f4d\u80fd\u6e90\u57fa\u790e\u8a2d\u65bd\u3002\u6211\u5011\u4e32\u806f\u4e26\u5354\u8abf\u5206\u6563\u5f0f\u80fd\u6e90\u8cc7\u6e90\uff0c\u5c07\u500b\u4eba\u3001\u4f01\u696d\u3001\u57ce\u5e02\u4e43\u81f3\u570b\u5bb6\u5c64\u7d1a\u7684\u80fd\u6e90\u7db2\u7d61\uff0c\u6574\u5408\u70ba\u53ef\u898f\u6a21\u5316\u904b\u4f5c\u7684\u865b\u64ec\u96fb\u5ee0\uff08VPP\uff09\u3002\n\n\u6211\u5011\u9032\u4e00\u6b65\u9023\u7d50\u80fd\u6e90\u6548\u7387\u8207\u8cc7\u672c\u5e02\u5834\uff0c\u63a8\u52d5\u80fd\u6e90\u8cc7\u7522\u9081\u5411\u5168\u65b0\u7684\u6a5f\u69cb\u6295\u8cc7\u985e\u5225\uff0c\u70ba\u80fd\u6e90\u57fa\u790e\u8a2d\u65bd\u958b\u555f\u66f4\u5177\u5f48\u6027\u8207\u53bb\u4e2d\u5fc3\u5316\u7684\u672a\u4f86\u3002\u900f\u904e\u5c07\u50b3\u7d71\u96fb\u7db2\u8f49\u578b\u70ba\u9ad8\u6548\u7387\u7684\u6578\u4f4d\u80fd\u6e90\u7db2\u7d61\uff0c\u6211\u5011\u8b93\u7da0\u8272\u6295\u8cc7\u540c\u6642\u5275\u9020\u7d93\u6fdf\u50f9\u503c\u8207\u793e\u6703\u9032\u6b65\uff0c\u63a8\u52d5\u80fd\u6e90\u6587\u660e\u9081\u5411\u4e0b\u4e00\u500b\u968e\u6bb5\u3002",
       'mission.eyebrow': "Our Mission",
       'mission.title': "\u4e32\u806f\u80fd\u6e90\u793e\u7fa4\uff0c\u5171\u5275\u6f54\u6de8\u672a\u4f86",      
-      // 會社概要表格 - 日文版本 (8 行)
-      'group.profile.company_name_jp': "社名",
-      'group.profile.company_name_value_jp': "NextDrive Holdings 株式会社",
-      'group.profile.representative_jp': "取締役会長",
-      'group.profile.representative_value_jp': "顏哲淵",
-
-      'group.profile.capital_jp': "資本金",
-      'group.profile.capital_value_jp': "30,000,000円",
-
-      'group.profile.location_jp': "本社",
-      'group.profile.location_value_jp': "〒105-0012<br><br>東京都港区芝大門1丁目2-14",
-      'group.profile.business_jp': "事業内容",
-      'group.profile.business_value_jp': "グループ子会社の経営管理ならびにそれに付帯する業務",
-      'group.profile.subsidiary_jp': "子会社の事業内容",
-      'group.profile.subsidiary_value_jp': "エネルギーマネジメントサービスの提供<br><br>エネルギーマネジメント機器の開発ならびに販売<br><br>再生可能エネルギー等の電力、アグリゲーションサービスの提供<br><br>蓄電所の開発ならびに販売<br><br>通信ソフトウェアの開発ならびに販売",
     },
     en: {
-      'news.item1.date': "Tokyo, Japan – July 2, 2026",
+      'news.item1.date': "TOKYO, Japan – July 2, 2026",
       'news.item1.location': "Tokyo, Japan",
-      'news.item1.desc': "NextDrive&apos;s Kumamoto FTM BESS is grid-connected, trading on JEPX since June 2026.",
+      'news.item1.desc': "NextDrive&apos;s Kumamoto FTM BESS is now grid-connected and has been actively trading on the JEPX spot market since June 2026.",
       'news.item1.tag': "Press Release",
-      'news.item1.title': "NextDrive Connects First Japan FTM BESS, Begins Trading",
-      'news.item1.content': "<p>NextDrive announces that its front-of-the-meter (FTM) battery energy storage system (BESS) project in Yamaga City, Kumamoto Prefecture, Kyushu, Japan, completed grid connection and commercial operation (COD) this February, and has been trading in the JEPX (Japan Electric Power Exchange) spot market since June 4. This marks NextDrive&apos;s first front-of-the-meter storage project in Japan. The project is expected to qualify for the EPRX balancing (reserve) market in August this year, at which point it will be fully live across both the energy and balancing markets.</p><p><strong>First Front-of-the-Meter BESS Grid-Connected in the Kyushu Region</strong></p><p>Located in Yamaga City, Kumamoto Prefecture, the project has an AC output capacity of 1,998 kW and a DC storage capacity of 8,146 kWh, built using a TMEIC power conversion system (PCS) paired with CATL battery cells, and reached commercial operation (COD) on February 26, 2026. From the interconnection application in February 2025 and the utility&apos;s response letter that March, to commercial operation in February 2026, the project took roughly a year to develop — demonstrating NextDrive&apos;s end-to-end project capabilities in the Japanese market, from land acquisition and grid application to construction execution.</p><p><strong>JEPX Spot Trading Now Live; EPRX Balancing Market Targeted for August</strong></p><p>The project has been trading in the JEPX spot market since June 4, 2026, with NextDrive using predictive AI dispatch on its IoE platform to dynamically adjust the project&apos;s charge-discharge strategy based on real-time electricity prices. The project is also expected to qualify for the EPRX balancing market in August 2026, at which point it will be fully live across both the energy and balancing markets, further improving its overall returns. This project&apos;s progress also marks the expansion of NextDrive&apos;s business in Japan from its existing behind-the-meter (BTM) energy management into front-of-the-meter, grid-scale storage and market trading, rounding out the company&apos;s position across the energy aggregation value chain in Japan.</p><p>Looking ahead, as Japan&apos;s electricity market continues to open and interconnection applications for front-of-the-meter storage projects steadily increase, NextDrive will continue to replicate this project&apos;s development and trading model, expanding its front-of-the-meter storage assets in Kyushu and other regions. Built around its IoE platform, the company will continue to connect front-of-the-meter, behind-the-meter, and distributed energy resources, helping Japan&apos;s power system move toward a more resilient and market-efficient energy transition.</p>",
+      'news.item1.title': "NextDrive Connects First FTM BESS in Japan, Commences Commercial Trading",
+      'news.item1.content': "<p>NextDrive has announced that its premier front-of-the-meter (FTM) battery energy storage system (BESS) project in Yamaga City, Kumamoto Prefecture (Kyushu region), successfully completed grid connection and achieved commercial operation (COD) on February 26, 2026. The facility has been actively trading on the Japan Electric Power Exchange (JEPX) spot market since June 4, 2026, marking NextDrive&apos;s first operational FTM storage project in Japan.</p><p>The project is also on track to qualify for the EPRX balancing (reserve) market by August 2026, which will enable full monetization across both the wholesale energy and ancillary service markets.</p><p><strong>Milestone Achievement in the Kyushu Region</strong></p><p>Located in Yamaga City, the utility-scale project features high-efficiency infrastructure tailored for grid stability. The project has an AC output capacity of 1,998 kW and a DC storage capacity of 8,146 kWh, built utilizing a TMEIC power conversion system (PCS) paired with high-performance CATL battery cells.</p><p><strong>AI-Driven Trading via IoE Platform</strong></p><p>Since entering the JEPX spot market on June 4, NextDrive has deployed predictive AI dispatch via its proprietary IoE (Internet of Energy) platform. This technology dynamically optimizes the asset&apos;s charge-and-discharge strategy based on real-time market electricity prices to maximize peak spreads. Upon securing qualification for the EPRX balancing market in August 2026, the asset will unlock dual revenue streams by operating simultaneously across both energy and balancing markets to maximize overall returns. This milestone signals a strategic evolution for NextDrive in Japan, expanding its footprint from traditional behind-the-meter (BTM) energy management into front-of-the-meter, grid-scale storage and power trading—solidifying its positioning across the entire energy aggregation value chain.</p><p><strong>Driving Japan&apos;s Energy Transition</strong></p><p>Looking ahead, as Japan&apos;s electricity sector continues to deregulate and grid-interconnection applications for FTM storage steadily rise, NextDrive plans to replicate this proven development and trading blueprint across Kyushu and other key regions. Centering its strategy around the IoE platform, the company will continue to bridge front-of-the-meter, behind-the-meter, and distributed energy resources (DERs), fostering a more resilient, efficient, and market-driven energy transition for Japan&apos;s power grid.</p>",
       'news.item2.date': "Taipei, Taiwan – October 29, 2025",
       'news.item2.location': "Taipei, Taiwan",
       'news.item2.desc': "NextDrive's AI control cuts costs 2.7x, opening a new era of solar-storage investment.",
@@ -402,6 +393,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'milestone.label2': "Managed Distributed Energy",
       'milestone.label3': "Founded",
       'milestone.label4': "JPX \u2014 Top 14",
+      'contact.eyebrow': "Contact Us",
+      'contact.preview_note': "\u203b This is a visual preview. The live form is served by HubSpot on the published site.",
+      'contact.title': "Contact Our Team",
+      'contact.lead': "Whether you are exploring our energy solutions, investment opportunities, or a potential partnership, our team is here to help. Complete the form below and we will get back to you shortly.",
+      'contact.fallback': "If the form does not appear, ",
+      'contact.fallback.link': "contact us here",
       'nav.contact': "Contact Us",
       'nav.group': "Group",
       'nav.mission': "Mission",
@@ -513,22 +510,6 @@ document.addEventListener('DOMContentLoaded', () => {
       'mission.body': "NextDrive Holdings connects distributed energy resources and builds the digital energy infrastructure of tomorrow through our Internet of Energy Platform. We unify and orchestrate decentralized power networks at scale, connecting individuals, corporations, cities, and nations into unified, country-scale Virtual Power Plants.\n\nWe bridge financial markets with energy efficiency into a new institutional asset class driven by financial alpha, advancing energy infrastructure into a new era of decentralization and flexibility. By converting analog power grids into highly efficient digital energy networks, our platform turns green investments into reliable drivers of both economic returns and structural societal progress—advancing civilization to its next stage.",
       'mission.eyebrow': "Our Mission",
       'mission.title': "Connecting Communities to a Cleaner Tomorrow.",      
-      // 會社概要表格 - 日文版本 (8 行)
-      'group.profile.company_name_jp': "社名",
-      'group.profile.company_name_value_jp': "NextDrive Holdings 株式会社",
-      'group.profile.representative_jp': "取締役会長",
-      'group.profile.representative_value_jp': "顏哲淵",
-
-      'group.profile.capital_jp': "資本金",
-      'group.profile.capital_value_jp': "30,000,000円",
-
-      'group.profile.location_jp': "本社",
-      'group.profile.location_value_jp': "〒105-0012<br><br>東京都港区芝大門1丁目2-14",
-      'group.profile.business_jp': "事業内容",
-      'group.profile.business_value_jp': "グループ子会社の経営管理ならびにそれに付帯する業務",
-      'group.profile.subsidiary_jp': "子会社の事業内容",
-      'group.profile.subsidiary_value_jp': "エネルギーマネジメントサービスの提供<br><br>エネルギーマネジメント機器の開発ならびに販売<br><br>再生可能エネルギー等の電力、アグリゲーションサービスの提供<br><br>蓄電所の開発ならびに販売<br><br>通信ソフトウェアの開発ならびに販売",
-      
       // 會社概要表格 - 英文版本 (8 行)
       'group.profile.company_name_en': "Company Name",
       'group.profile.company_name_value_en': "NextDrive Holdings Co., Ltd.",
@@ -670,6 +651,12 @@ document.addEventListener('DOMContentLoaded', () => {
       'milestone.label2': "管理リソース規模",
       'milestone.label3': "\u6210\u7acb",
       'milestone.label4': "\u6771\u8a3c \u2014 Top 14",
+      'contact.eyebrow': "Contact Us",
+      'contact.preview_note': "\u203b \u3053\u308c\u306f\u8868\u793a\u30d7\u30ec\u30d3\u30e5\u30fc\u3067\u3059\u3002\u5b9f\u969b\u306e\u30d5\u30a9\u30fc\u30e0\u306f\u516c\u958b\u30b5\u30a4\u30c8\u3067 HubSpot \u306b\u3088\u308a\u8868\u793a\u3055\u308c\u307e\u3059\u3002",
+      'contact.title': "\u304a\u554f\u3044\u5408\u308f\u305b",
+      'contact.lead': "\u30a8\u30cd\u30eb\u30ae\u30fc\u30bd\u30ea\u30e5\u30fc\u30b7\u30e7\u30f3\u3001\u6295\u8cc7\u306b\u95a2\u3059\u308b\u3054\u76f8\u8ac7\u3001\u30d1\u30fc\u30c8\u30ca\u30fc\u30b7\u30c3\u30d7\u306a\u3069\u3001\u3042\u3089\u3086\u308b\u304a\u554f\u3044\u5408\u308f\u305b\u3092\u627f\u308a\u307e\u3059\u3002\u4e0b\u8a18\u30d5\u30a9\u30fc\u30e0\u306b\u3054\u8a18\u5165\u3044\u305f\u3060\u3051\u308c\u3070\u3001\u62c5\u5f53\u8005\u3088\u308a\u6298\u308a\u8fd4\u3057\u3054\u9023\u7d61\u3044\u305f\u3057\u307e\u3059\u3002",
+      'contact.fallback': "\u30d5\u30a9\u30fc\u30e0\u304c\u8868\u793a\u3055\u308c\u306a\u3044\u5834\u5408\u306f\u3001",
+      'contact.fallback.link': "\u3053\u3061\u3089\u304b\u3089\u304a\u554f\u3044\u5408\u308f\u305b\u304f\u3060\u3055\u3044",
       'nav.contact': "\u304a\u554f\u3044\u5408\u308f\u305b",
       'nav.group': "\u30b0\u30eb\u30fc\u30d7",
       'nav.mission': "\u30df\u30c3\u30b7\u30e7\u30f3",
@@ -902,6 +889,35 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', onScroll, { passive: true });
 
   /* ─────────────────────────────────────────
+     Mobile hamburger menu
+  ───────────────────────────────────────── */
+  const burger = document.getElementById('navBurger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuBackdrop = document.getElementById('mobileMenuBackdrop');
+  if (burger && mobileMenu) {
+    const setMenu = (open) => {
+      burger.classList.toggle('open', open);
+      mobileMenu.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      mobileMenu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      document.body.classList.toggle('menu-open', open);
+      if (menuBackdrop) {
+        menuBackdrop.hidden = false;
+        menuBackdrop.classList.toggle('open', open);
+      }
+    };
+    burger.addEventListener('click', () => setMenu(!mobileMenu.classList.contains('open')));
+    if (menuBackdrop) menuBackdrop.addEventListener('click', () => setMenu(false));
+    // 點擊選單內連結後自動收合（平滑捲動由既有 handler 處理）
+    mobileMenu.querySelectorAll('a[href^="#"]').forEach(a =>
+      a.addEventListener('click', () => setMenu(false)));
+    // 放大到桌機寬度時強制關閉，避免殘留開啟狀態
+    window.addEventListener('resize', () => { if (window.innerWidth > 768) setMenu(false); }, { passive: true });
+    // Esc 關閉
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+  }
+
+  /* ─────────────────────────────────────────
      Language switcher
   ───────────────────────────────────────── */
   const langBtns = document.querySelectorAll('[data-lang]');
@@ -913,9 +929,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 初始化：以當前 active 按鈕的語言套用
-  const activeLangBtn = document.querySelector('[data-lang].active');
-  if (activeLangBtn) applyLang(activeLangBtn.getAttribute('data-lang'));
+  // 初始化語言：?lang= 參數 > localStorage > 頁面預設 active 按鈕
+  const params = new URLSearchParams(location.search);
+  const urlLang = params.get('lang');
+  let stored = null;
+  try { stored = localStorage.getItem('ndhd_lang'); } catch (e) {}
+  const initLang = (i18n[urlLang] && urlLang) || (i18n[stored] && stored) ||
+    ((document.querySelector('[data-lang].active') || {}).getAttribute
+      ? document.querySelector('[data-lang].active').getAttribute('data-lang')
+      : 'ja');
+  langBtns.forEach(b => b.classList.toggle('active', b.getAttribute('data-lang') === initLang));
+  applyLang(initLang);
+
+  // 語言切換時同步 URL（?lang=）與 localStorage，讓 hreflang / 分享連結有效
+  langBtns.forEach(btn => btn.addEventListener('click', () => {
+    const lang = btn.getAttribute('data-lang');
+    try { localStorage.setItem('ndhd_lang', lang); } catch (e) {}
+    const p = new URLSearchParams(location.search);
+    p.set('lang', lang);
+    history.replaceState(null, '', location.pathname + '?' + p.toString() + location.hash);
+  }));
 
   // 初始化 logo 顏色
   onScroll();
